@@ -8,8 +8,8 @@ int binaryToDecimal(int n){
 
     while (n>0){
         int lastDigit = n%10; // gets the last digit of th binary number
+        ans += lastDigit * (1 << pow); // converts the last digit into decimal and adds it to the answer
         n /= 10; // remove the last digit from the binary number 
-        ans += lastDigit * ( 1<< pow); // converts the last digit into decimal and adds it to the answer wr to the place value 
         pow++;// increases the power by 1 for the next place value
     }
 
